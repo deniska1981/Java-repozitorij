@@ -4,9 +4,9 @@ function razbij(e) {
   let characterNumber = text.length;
   let dotNumber = text.split(/[.]/);
   document.getElementById(
-    "sentenceNumber"
-  ).innerHTML = `Broj rečenica: ${dotNumber.length}`;
-  document.getElementById(
     "characterNumber"
   ).innerHTML = `Broj znakova u rečenici: ${characterNumber}`;
+  document.getElementById("sentenceNumber").innerHTML = `Broj rečenica: ${
+    dotNumber.length - 1
+  }`;
 }
