@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Druga domaća zadaća - JavaScript</title>
+    <script defer src="zadaca_js2.js"></script>
+  </head>
+  <body>
+    <fieldset>
+      <legend style="font-size:large;">Prvi auto</legend><br>
+      <form>
+    <div class="autoPrvi" id="autoPrvi">
+      <label for="nadimak">Izaberi nadimak Prvog auta:</label>
+      <input type="text" id="nadimak" required/><br><br>
+      <label for="boja">Izaberi boju Prvog auta:</label>
+      <input type="color" id="colorpicker" value="#CC1559" required/><br><br>
+      <label for="brzina">Izaberi brzinu kojom želiš da ide Prvi auto:</label>
+      <input type="number" id="brzina" required/>
+    </form>
+  </fieldset>
+    </div>
+    <br>
+    <div class="autoDrugi" id="autoDrugi">
+      <fieldset>
+        <legend>Drugi auto</legend><br>
+        <form>
+      <div class="autoDrugi" id="autoDrugi">
+        <label for="nadimak-drugi">Izaberi nadimak Drugog auta:</label>
+        <input type="text" id="nadimak-drugi" required/><br><br>
+        <label for="boja">Izaberi boju Drugog auta:</label>
+        <input type="color" id="colorpicker-drugi" value="#CC1559" required/><br><br>
+        <label for="brzina-drugi">Izaberi brzinu kojom želiš da ide Drugi auto:</label>
+        <input type="number" id="brzina-drugi" required/>
+      </form>
+    </fieldset>
+    </div>
+<br>
+    <div class="utrkaAuta" id="utrkaAuta">
+      <label for="duljina">Izaberi duljinu staze utrke:</label>
+      <input type="number" id="duljina" required/>
+      <input type="submit" onclick="kreni(event)" value="kreni">
+    </div>
+    <div  id="tko-je-prvi">
+  </div>
+  </body>
+</html>
