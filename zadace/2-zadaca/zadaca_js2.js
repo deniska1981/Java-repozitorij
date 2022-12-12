@@ -36,11 +36,23 @@ function kreni(e) {
     utrkaAutaValues.duljina
   ) {
     if (utrkaAutaValues.autoPrvi.vrijeme > utrkaAutaValues.autoDrugi.vrijeme) {
-      utrkaAutaElementi.tkoJePrvi.innerHTML = `<p style="color:${utrkaAutaValues.autoDrugi.boja}">Pobjednik je ${utrkaAutaValues.autoDrugi.nadimak}. Vrijeme prolaza: ${utrkaAutaValues.autoDrugi.vrijeme} sati.`;
+      utrkaAutaElementi.tkoJePrvi.innerHTML = `<p style="color:${
+        utrkaAutaValues.autoDrugi.boja
+      }">Pobjednik je ${
+        utrkaAutaValues.autoDrugi.nadimak
+      }. Vrijeme prolaza: ${utrkaAutaValues.autoDrugi.vrijeme.toFixed(
+        2
+      )} sati.`;
     } else if (
       utrkaAutaValues.autoPrvi.vrijeme < utrkaAutaValues.autoDrugi.vrijeme
     ) {
-      utrkaAutaElementi.tkoJePrvi.innerHTML = `<p style="color:${utrkaAutaValues.autoPrvi.boja}">Pobjednik je ${utrkaAutaValues.autoPrvi.nadimak}. Vrijeme prolaza: ${utrkaAutaValues.autoPrvi.vrijeme} sati.</p>`;
+      utrkaAutaElementi.tkoJePrvi.innerHTML = `<p style="color:${
+        utrkaAutaValues.autoPrvi.boja
+      }">Pobjednik je ${
+        utrkaAutaValues.autoPrvi.nadimak
+      }. Vrijeme prolaza: ${utrkaAutaValues.autoPrvi.vrijeme.toFixed(
+        2
+      )} sati.</p>`;
     } else {
       utrkaAutaElementi.tkoJePrvi.innerHTML = `<p>Izjednačeno je!</p>`;
     }
