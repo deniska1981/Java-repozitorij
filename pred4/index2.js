@@ -54,3 +54,18 @@ function provjeriOsobu(event) {
     uiObjekti.provjerenaOsobaElement.innerHTML += `<p>Imate neparan broj godina!</p>`;
   }
 }
+
+x = 3;
+while (x > 10) {
+  console.log(x);
+  x += 3;
+}
+
+var mojePrvoPolje = [3, 5, "dddd", 10];
+mojePrvoPolje[0]; //3
+mojePrvoPolje[2]; //"dddd"
+mojePrvoPolje.length; //4
+
+for (let i = 0; i < mojePrvoPolje.length; i++) {
+  console.log(ojePrvoPlje[i]);
+}

@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-size: 25px;
+}
+
+body {
+  height: 100vh;
+  background: #c46a9a;
+}
+
+.container {
+  position: absolute;
+  width: 50%;
+  min-width: 580px;
+  transform: tralate(-50%, -50%);
+  top: 20%;
+  left: 25%;
+  background-color: black;
+  padding: 50px 10px;
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+}
+
+#blink {
+  color: white;
+  font-size: 30px;
+  animation: blinkingLetters 3s infinite;
+}
+
+@keyframes blinkingLetters {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+input {
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
+
+button {
+  width: 150px;
+  padding: 15px 0;
+  background: #d9027d;
+  color: white;
+  font-weight: 600;
+}
