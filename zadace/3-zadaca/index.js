@@ -21,5 +21,7 @@ function pogodi(event) {
     document.getElementById("rezultat").innerText = "Unesi neki veći broj";
   }
 
-  document.getElementById("brojPokusaja").innerText = brojPokusaja;
+  document.getElementById(
+    "brojPokusaja"
+  ).innerText = `Broj pokušaja ${brojPokusaja}`;
 }
