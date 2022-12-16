@@ -3,12 +3,13 @@
   margin: 0;
   box-sizing: border-box;
   color: white;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 body {
   height: 100vh;
   background: #c46a9a;
+  text-align: center;
 }
 
 .container {
@@ -27,7 +28,7 @@ body {
 
 #blink {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   animation: blinkingLetters 3s infinite;
 }
 
@@ -57,7 +58,7 @@ input {
 
 button {
   width: 150px;
-  padding: 15px 0;
+  padding: 10px 0;
   background: #d9027d;
   color: white;
   font-weight: 600;
