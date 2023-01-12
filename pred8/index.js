@@ -73,19 +73,19 @@ class Zmire extends Igra {
 //promisi i fetch api i async await
 fetch(`https://api.nationalize.io/?name=michael`)
   .then((response) => {
-    return response.json();
+    return response.json(); //gotov i ja
   })
-  .then((objekt) => console.log(objekt));
+  .then((objekt) => console.log(objekt))
+  .catch((error) => {
+    console.log(error);
+  })
+  .finally(() => {});
+
+console.log("Ja bih se trebao pojaviti tek nakon izvrsenja fetcha.");
 
 async function mojPrvaAsinkrona() {
   let response = await fetch(`https://api.nationalize.io/?name=michael`);
-
-  console.log("OVO");
-  console.log("ONO");
-
   let objekt = await response.json();
-
-  console.log(objekt);
 
   console.log(
     `Znači ${objekt.name} je najvjerojatnije ${objekt.country[0].country_id}`
@@ -95,7 +95,7 @@ async function mojPrvaAsinkrona() {
 mojPrvaAsinkrona();
 
 var t = 1;
-var mojInterval;
+var mojInterval; //ok, opet moram zakociti i rjesiti then od promisa kojeg sam cekao
 
 var mojPrviPromis = new Promise((resolve, reject) => {
   mojInterval = setInterval(() => {
